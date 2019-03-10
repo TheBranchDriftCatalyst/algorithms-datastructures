@@ -1,0 +1,156 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 1,
+  "numPassedTests": 8,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 1,
+  "numTotalTests": 8,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1552690017779,
+  "success": true,
+  "testResults": [
+    {
+      "console": null,
+      "failureMessage": null,
+      "numFailingTests": 0,
+      "numPassingTests": 8,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "perfStats": {
+        "end": 1552690019538,
+        "start": 1552690017814
+      },
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "unmatched": 0,
+        "updated": 0,
+        "uncheckedKeys": []
+      },
+      "testFilePath": "/Users/DJ/code/babel-sandbox/packages/project-euler/lib/__tests__/project-euler.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.\nThe sum of these multiples is 23"
+          ],
+          "duration": 3,
+          "failureMessages": [],
+          "fullName": "If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.\nThe sum of these multiples is 23 Find the sum of all the multiples of 3 or 5 below 1000",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "Find the sum of all the multiples of 3 or 5 below 1000"
+        },
+        {
+          "ancestorTitles": [
+            "Sum of Even Fibonacci Seq"
+          ],
+          "duration": 1,
+          "failureMessages": [],
+          "fullName": "Sum of Even Fibonacci Seq By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms."
+        },
+        {
+          "ancestorTitles": [
+            "The prime factors of 13195 are 5, 7, 13 and 29."
+          ],
+          "duration": 387,
+          "failureMessages": [],
+          "fullName": "The prime factors of 13195 are 5, 7, 13 and 29. What is the largest prime factor of the number 600851475143",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "What is the largest prime factor of the number 600851475143"
+        },
+        {
+          "ancestorTitles": [
+            "The prime factors of 13195 are 5, 7, 13 and 29."
+          ],
+          "duration": 286,
+          "failureMessages": [],
+          "fullName": "The prime factors of 13195 are 5, 7, 13 and 29. What is the largest prime factor of the number 600851475143",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "What is the largest prime factor of the number 600851475143"
+        },
+        {
+          "ancestorTitles": [
+            "2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder."
+          ],
+          "duration": 256,
+          "failureMessages": [],
+          "fullName": "2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?"
+        },
+        {
+          "ancestorTitles": [
+            "Sum of square difference"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "Sum of square difference Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum"
+        },
+        {
+          "ancestorTitles": [
+            "By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13."
+          ],
+          "duration": 44,
+          "failureMessages": [],
+          "fullName": "By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13. What is the 10 001st prime number?",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "What is the 10 001st prime number?"
+        },
+        {
+          "ancestorTitles": [
+            "By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13."
+          ],
+          "duration": 6,
+          "failureMessages": [],
+          "fullName": "By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13. What is the 10 001st prime number?",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "What is the 10 001st prime number?"
+        }
+      ],
+      "sourceMaps": {},
+      "skipped": false,
+      "leaks": false
+    }
+  ],
+  "wasInterrupted": false
+}

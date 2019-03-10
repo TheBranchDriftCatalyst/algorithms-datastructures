@@ -1,0 +1,61 @@
+status,sv_name,call_time,resp_size
+success,Saved View 1 - adset id,11.55675615400006,0
+failure,"Saved View 1 - adset id, ad id",1.982275977000012,null
+success,Saved View 2- adset id,86.71168802100013,2588
+failure,"Saved View 2 - adset id, ad id",119.4793877679999,null
+success,Saved View 3- campaign name,12.058253678000067,137
+success,"Saved View 3 - campaign name, adset id",11.222846288000001,0
+failure,"Saved View 3 - campaign name, adset_id, ad_id",2.0926789510000963,null
+success,Saved View 4- campaign name,11.466748375999973,137
+failure,"Saved View 4 - campaign name, adset id",119.197122064,null
+failure,"Saved View 4 - campaign name, adset_id, ad_id",120.00781663900008,null
+success,Saved View 5 - campaign name,9.486241034999955,137
+success,"Saved View 5 - campaign name, adset id",9.523041342000012,0
+failure,"Saved View 5 - campiagn name, adset_id, ad_id",1.979146475999849,null
+success,Saved View 6- campaign name,9.35861417000019,137
+failure,"Saved View 6 - campaign name, adset id",119.6390760509998,null
+failure,"Saved View 6 - campaign name, adset_id, ad_id",119.4011020800001,null
+success,Saved View 7 - campaign name,2.9066827429998665,0
+success,"Saved View 7 - campaign name, adset id",0.7271106129998807,0
+success,Saved View 8 - campaign name,0.6593737439999823,0
+failure,"Saved View 8 - campaign name, adset id",119.776692453,null
+success,Saved View 9 - account id,57.08707787899999,4
+success,"Saved View 9 - account id, campaign",5.0893403590000235,58
+success,"Saved View 9 - account id, campaign, adset id",5.183063717000186,0
+failure,"Saved View 9 - account id, campaign, adset id, ad id",1.4307290080001112,null
+success,Saved View 10 - account id,4.876146786000114,4
+success,"Saved View 10 - account id, campaign",5.400140776999994,58
+success,"Saved View 10 - account id, campaign, adset id",8.441378490000032,225
+success,"Saved View 10 - account id, campaign, adset id, ad id",12.529621152000036,609
+success,Saved View 11 - campaign,9.354526548000052,137
+success,"Saved View 11 - campaign, adset id",9.335921714999946,0
+success,Saved View 12 - campaign,9.202444809000008,137
+success,"Saved View 12 - campaign, adset id",92.92598549600015,2634
+success,Saved View 13 - campaign,9.41148489199998,137
+failure,"Saved View 13 - campaign, ad id",1.9296411999999545,null
+success,Saved View 14 - campaign,9.41525318,137
+success,"Saved View 14 - campaign, ad id",12.942374809000176,9410
+success,Saved View 15 - campaign,10.44442862700019,72
+success,"Saved View 15 - campaign, adset id",10.679554915999994,0
+failure,"Saved View 15 - campaign, adset id, ad id",2.751088705000002,null
+success,Saved View 16 - campaign,9.964562619999983,72
+success,"Saved View 16 - campaign, adset id",82.16807445799978,2383
+failure,"Saved View 16 - campaign, adset id, ad id",119.87426398800034,null
+success,Saved View 17 - campaign,9.79542867799988,137
+success,"Saved View 17 - campaign, adset id",9.54289838600019,0
+failure,"Saved View 17 - campaign, adset id, ad id",2.004437760999892,null
+success,Saved View 18 - campaign,11.061821021000389,137
+failure,"Saved View 18 - campaign, adset id",120.0745213390002,null
+failure,"Saved View 18 - campaign, adset id, ad id",119.51918382799998,null
+success,Saved View 19 - campaign,4.093245315999724,5
+success,"Saved View 19 - campaign, adset id",3.9707596929999998,0
+failure,"Saved View 19 - campaign, adset id, ad id",1.1487413269998505,null
+success,Saved View 20 - campaign,4.17983517699968,5
+failure,"Saved View 20 - campaign, adset id, ad id",120.3226148880003,null
+success,"Saved View 20 - campaign, adset id",5.955987976999953,7
+success,Saved View 21 - campaign,9.949325626000297,137
+success,"Saved View 21 - campaign, adset id",9.440130398000125,0
+failure,"Saved View 21 - campaign, adset id, ad id",1.964310852000024,null
+success,Saved View 22 - campaign,41.99573127799994,137
+success,"Saved View 22 - campaign, adset id",91.11820719799958,2634
+failure,"Saved View 22 - campaign, adset id, ad id",119.88341416299996,null

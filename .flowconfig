@@ -1,0 +1,5 @@
+[options]
+module.system.node.resolve_dirname='<PROJECT_ROOT>/node_modules'
+esproposal.decorators=ignore
+module.file_ext=.scss
+module.file_ext=.md

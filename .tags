@@ -1,0 +1,57 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Available Scripts	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/README.md	/^## Available Scripts$/;"	function	line:3
+`npm start`	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/README.md	/^### `npm start`$/;"	function	line:7
+`npm test`	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/README.md	/^### `npm test`$/;"	function	line:15
+`npm run build`	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/README.md	/^### `npm run build`$/;"	function	line:20
+`npm run eject`	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/README.md	/^### `npm run eject`$/;"	function	line:30
+Learn More	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/README.md	/^## Learn More$/;"	function	line:40
+Code Splitting	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/README.md	/^### Code Splitting$/;"	function	line:46
+Analyzing the Bundle Size	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/README.md	/^### Analyzing the Bundle Size$/;"	function	line:50
+Making a Progressive Web App	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/README.md	/^### Making a Progressive Web App$/;"	function	line:54
+Advanced Configuration	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/README.md	/^### Advanced Configuration$/;"	function	line:58
+Deployment	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/README.md	/^### Deployment$/;"	function	line:62
+`npm run build` fails to minify	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/README.md	/^### `npm run build` fails to minify$/;"	function	line:66
+html	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/index.html	/^<html lang="en">$/;"	function	line:2
+head	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/index.html	/^  <head>$/;"	function	line:3
+meta	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/index.html	/^    <meta charset="utf-8" \/>$/;"	function	line:4
+link	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/index.html	/^    <link rel="shortcut icon" href="%PUBLIC_URL%\/favicon.ico" \/>$/;"	function	line:5
+meta	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/index.html	/^    <meta name="theme-color" content="#000000" \/>$/;"	function	line:10
+link	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/index.html	/^    <link rel="manifest" href="%PUBLIC_URL%\/manifest.json" \/>$/;"	function	line:15
+title	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/index.html	/^    <title>React App<\/title>$/;"	function	line:25
+body	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/index.html	/^  <body>$/;"	function	line:27
+noscript	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/index.html	/^    <noscript>You need to enable JavaScript to run this app.<\/noscript>$/;"	function	line:28
+div	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/index.html	/^    <div id="root"><\/div>$/;"	function	line:29
+short_name	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/manifest.json	/^  "short_name": "React App",$/;"	function	line:2
+name	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/manifest.json	/^  "name": "Create React App Sample",$/;"	function	line:3
+icons	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/manifest.json	/^  "icons": [$/;"	function	line:4
+src	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/manifest.json	/^      "src": "favicon.ico",$/;"	function	line:6
+sizes	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/manifest.json	/^      "sizes": "64x64 32x32 24x24 16x16",$/;"	function	line:7
+type	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/manifest.json	/^      "type": "image\/x-icon"$/;"	function	line:8
+start_url	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/manifest.json	/^  "start_url": ".",$/;"	function	line:11
+display	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/manifest.json	/^  "display": "standalone",$/;"	function	line:12
+theme_color	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/manifest.json	/^  "theme_color": "#000000",$/;"	function	line:13
+background_color	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/public/manifest.json	/^  "background_color": "#ffffff"$/;"	function	line:14
+.App	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/src/App.css	/^.App {$/;"	function	line:1
+.App-logo	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/src/App.css	/^.App-logo {$/;"	function	line:5
+.App-header	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/src/App.css	/^.App-header {$/;"	function	line:11
+.App-link	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/src/App.css	/^.App-link {$/;"	function	line:22
+@keyframes App-logo-spin	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/src/App.css	/^@keyframes App-logo-spin {$/;"	function	line:26
+from	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/src/App.css	/^  from {$/;"	function	line:27
+to	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/src/App.css	/^  to {$/;"	function	line:30
+body	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/src/index.css	/^body {$/;"	function	line:1
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen"	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/src/index.css	/^  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",$/;"	function	line:4
+"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue"	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/src/index.css	/^    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",$/;"	function	line:5
+code	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/src/index.css	/^code {$/;"	function	line:11
+font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New"	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/src/index.css	/^  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",$/;"	function	line:12
+register	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/src/serviceWorker.js	/^export function register(config) {$/;"	function	line:23
+registerValidSW	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/src/serviceWorker.js	/^function registerValidSW(swUrl, config) {$/;"	function	line:57
+registerValidSW	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/src/serviceWorker.js	/^function registerValidSW(swUrl, config) {$/;"	function	line:57
+checkValidServiceWorker	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/src/serviceWorker.js	/^function checkValidServiceWorker(swUrl, config) {$/;"	function	line:101
+checkValidServiceWorker	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/src/serviceWorker.js	/^function checkValidServiceWorker(swUrl, config) {$/;"	function	line:101
+unregister	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/src/serviceWorker.js	/^export function unregister() {$/;"	function	line:129
+render	/Users/DJ/code/babel-sandbox/packages/ocelot-profiler-ui/src/App.js	/^  render() {$/;"	function	line:6

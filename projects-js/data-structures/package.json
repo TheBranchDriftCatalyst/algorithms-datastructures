@@ -1,0 +1,24 @@
+{
+  "name": "@babel-sandbox/data-structures",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Commando Panda <djdanielsh@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/data-structures/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "private"
+  },
+  "scripts": {
+    "watch": "chokidar './packages/data-structures/lib' -c 'if [ '{event}' = 'change' ]; then babel-node {path}; fi;'"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}
