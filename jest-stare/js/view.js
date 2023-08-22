@@ -247,7 +247,14 @@ const Constants_1 = require("../../processor/Constants");
 const AnsiParser = require("ansi-parser");
 class ImageSnapshotDifference {
     static containsDiff(jestFailureMessage) {
-        return jestFailureMessage.indexOf(ImageSnapshotDifference.DIFF_INDICATOR) >= 0;
+        let isFailure = false;
+        for (const indicator of ImageSnapshotDifference.DIFF_INDICATOR) {
+            if (jestFailureMessage.indexOf(indicator) >= 0) {
+                isFailure = true;
+                break;
+            }
+        }
+        return isFailure;
     }
     static generate(jestFailureMessage) {
         const imageDiffFilename = ImageSnapshotDifference.parseDiffImageName(jestFailureMessage);
@@ -287,7 +294,7 @@ class ImageSnapshotDifference {
         return null;
     }
 }
-ImageSnapshotDifference.DIFF_INDICATOR = "different from snapshot";
+ImageSnapshotDifference.DIFF_INDICATOR = ["different from snapshot", "image to be the same size"];
 ImageSnapshotDifference.DIFF_IMAGE = /See diff for details:\s*((.*?)\.png)/;
 ImageSnapshotDifference.DIFF_DETAILS = /Error: (.*)/;
 exports.ImageSnapshotDifference = ImageSnapshotDifference;

@@ -71,7 +71,7 @@
                 <canvas id="test-suites-canvas" width="100" height="100"></canvas>
                 <h2>Test Suites</h2>
                 <div class="list-group">
-                    <p id="test-suites-results" class="list-group-item list-group-item-action">1 passed, 1 total</p>
+                    <p id="test-suites-results" class="list-group-item list-group-item-action">0 passed, 1 total</p>
                 </div>
             </div>
             <!-- /.col-lg-4 -->
@@ -79,7 +79,7 @@
                 <canvas id="tests-canvas" width="100" height="100"></canvas>
                 <h2>Tests</h2>
                 <div class="list-group">
-                    <p id="tests-results" class="list-group-item list-group-item-action">8 passed, 8 total</p>
+                    <p id="tests-results" class="list-group-item list-group-item-action">0 passed, 0 total</p>
                 </div>
             </div>
             <!-- /.col-lg-4 -->
@@ -104,16 +104,16 @@
   &quot;resultJson&quot;: &quot;jest-results.json&quot;
 }</div>
         <div class="d-none" id="test-results">{
-  &quot;numFailedTestSuites&quot;: 0,
+  &quot;numFailedTestSuites&quot;: 1,
   &quot;numFailedTests&quot;: 0,
-  &quot;numPassedTestSuites&quot;: 1,
-  &quot;numPassedTests&quot;: 8,
+  &quot;numPassedTestSuites&quot;: 0,
+  &quot;numPassedTests&quot;: 0,
   &quot;numPendingTestSuites&quot;: 0,
   &quot;numPendingTests&quot;: 0,
-  &quot;numRuntimeErrorTestSuites&quot;: 0,
+  &quot;numRuntimeErrorTestSuites&quot;: 1,
   &quot;numTodoTests&quot;: 0,
   &quot;numTotalTestSuites&quot;: 1,
-  &quot;numTotalTests&quot;: 8,
+  &quot;numTotalTests&quot;: 0,
   &quot;openHandles&quot;: [],
   &quot;snapshot&quot;: {
     &quot;added&quot;: 0,
@@ -130,131 +130,35 @@
     &quot;unmatched&quot;: 0,
     &quot;updated&quot;: 0
   },
-  &quot;startTime&quot;: 1552690017779,
-  &quot;success&quot;: true,
+  &quot;startTime&quot;: 1692567840475,
+  &quot;success&quot;: false,
   &quot;testResults&quot;: [
     {
-      &quot;console&quot;: null,
-      &quot;failureMessage&quot;: null,
+      &quot;displayName&quot;: &quot;&quot;,
+      &quot;failureMessage&quot;: &quot;  \u001b[1m● \u001b[22mTest suite failed to run\n\n    &#x2F;Users&#x2F;djdaniels&#x2F;code&#x2F;archived&#x2F;algorithms-datastructures&#x2F;projects-js&#x2F;project-euler&#x2F;__tests__&#x2F;project-euler.js:1\n    ({\&quot;Object.&lt;anonymous&gt;\&quot;:function(module,exports,require,__dirname,__filename,global,jest){import main01 from &#39;..&#x2F;01-sum-of-divisors&#39;;\n                                                                                             ^^^^^^\n\n    SyntaxError: Cannot use import statement outside a module\n\n      \u001b[2mat new Script (\u001b[22mnode:vm\u001b[2m:100:7)\u001b[22m\n      \u001b[2mat ScriptTransformer._transformAndBuildScript (\u001b[22mnode_modules&#x2F;@jest&#x2F;transform&#x2F;build&#x2F;ScriptTransformer.js\u001b[2m:471:17)\u001b[22m\n      \u001b[2mat ScriptTransformer.transform (\u001b[22mnode_modules&#x2F;@jest&#x2F;transform&#x2F;build&#x2F;ScriptTransformer.js\u001b[2m:513:25)\u001b[22m\n&quot;,
+      &quot;leaks&quot;: false,
       &quot;numFailingTests&quot;: 0,
-      &quot;numPassingTests&quot;: 8,
+      &quot;numPassingTests&quot;: 0,
       &quot;numPendingTests&quot;: 0,
       &quot;numTodoTests&quot;: 0,
+      &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 1552690019538,
-        &quot;start&quot;: 1552690017814
+        &quot;end&quot;: 0,
+        &quot;start&quot;: 0
       },
+      &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
         &quot;added&quot;: 0,
         &quot;fileDeleted&quot;: false,
         &quot;matched&quot;: 0,
         &quot;unchecked&quot;: 0,
+        &quot;uncheckedKeys&quot;: [],
         &quot;unmatched&quot;: 0,
-        &quot;updated&quot;: 0,
-        &quot;uncheckedKeys&quot;: []
+        &quot;updated&quot;: 0
       },
-      &quot;testFilePath&quot;: &quot;&#x2F;Users&#x2F;DJ&#x2F;code&#x2F;babel-sandbox&#x2F;packages&#x2F;project-euler&#x2F;lib&#x2F;__tests__&#x2F;project-euler.js&quot;,
-      &quot;testResults&quot;: [
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.\nThe sum of these multiples is 23&quot;
-          ],
-          &quot;duration&quot;: 3,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.\nThe sum of these multiples is 23 Find the sum of all the multiples of 3 or 5 below 1000&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;Find the sum of all the multiples of 3 or 5 below 1000&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;Sum of Even Fibonacci Seq&quot;
-          ],
-          &quot;duration&quot;: 1,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;Sum of Even Fibonacci Seq By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;The prime factors of 13195 are 5, 7, 13 and 29.&quot;
-          ],
-          &quot;duration&quot;: 387,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;The prime factors of 13195 are 5, 7, 13 and 29. What is the largest prime factor of the number 600851475143&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;What is the largest prime factor of the number 600851475143&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;The prime factors of 13195 are 5, 7, 13 and 29.&quot;
-          ],
-          &quot;duration&quot;: 286,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;The prime factors of 13195 are 5, 7, 13 and 29. What is the largest prime factor of the number 600851475143&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;What is the largest prime factor of the number 600851475143&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.&quot;
-          ],
-          &quot;duration&quot;: 256,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;Sum of square difference&quot;
-          ],
-          &quot;duration&quot;: 0,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;Sum of square difference Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.&quot;
-          ],
-          &quot;duration&quot;: 44,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13. What is the 10 001st prime number?&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;What is the 10 001st prime number?&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.&quot;
-          ],
-          &quot;duration&quot;: 6,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13. What is the 10 001st prime number?&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;What is the 10 001st prime number?&quot;
-        }
-      ],
-      &quot;sourceMaps&quot;: {},
-      &quot;skipped&quot;: false,
-      &quot;leaks&quot;: false
+      &quot;testExecError&quot;: {},
+      &quot;testFilePath&quot;: &quot;&#x2F;Users&#x2F;djdaniels&#x2F;code&#x2F;archived&#x2F;algorithms-datastructures&#x2F;projects-js&#x2F;project-euler&#x2F;__tests__&#x2F;project-euler.js&quot;,
+      &quot;testResults&quot;: []
     }
   ],
   &quot;wasInterrupted&quot;: false
