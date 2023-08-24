@@ -1,33 +1,50 @@
-import { cloneDeep, times, remove } from 'lodash';
+import { cloneDeep, times, remove, noop } from 'lodash';
 import Debug from 'debug';
 
 const dbg = Debug('RecNQueens');
 
-// This blows the stack at 15x15
+export interface HooksInterface {
+  removed?: Function,
+  solved?: Function,
+  placed?: Function,
+  boardPosition?: Function
+}
 
 export default class RecNQueensBoard {
   board: number[][];
+  hooks: HooksInterface | {} = {
+    removed: noop,
+    solved: noop,
+    placed: noop,
+    boardPosition: noop
+  };
   
   constructor(n: number) {
     this.board = times(n, () => times(n, () => 0));
   }
 
-  queens = [];
+  queens: number[][] = []; // [x, y] coordinates of queens
   solutionCount = 0;
   solutions = [];
   steps = 0;
 
+  initHooks(hooks: HooksInterface) {
+    this.hooks = hooks
+    return this
+  }
+
   solve(row = 0): RecNQueensBoard {
+    // Board Base Cases
     if (this.board.length === 2 || this.board.length === 3) {
       return this;
     }
+    // SOLUTION FOUND
     if (row === this.board.length) {
       dbg('Solution found!');
-      // @ts-ignore
-      this.solutions.push(cloneDeep(this.queens));
-      this.solutionCount += 1;
+      this.solutionFound(this.queens)
       return this;
     }
+    // SOLVER, Recursive Back Tracking
     for (let i = 0; i < this.board.length; i++) {
       if (this.placeQueen(row, i)) {
         this.solve(row + 1);
@@ -35,6 +52,13 @@ export default class RecNQueensBoard {
       }
     }
     return this;
+  }
+
+  solutionFound(solution: number[][]) {
+    const _solution = cloneDeep(solution)
+    // @ts-ignore
+    this.solutions.push(_solution); 
+    // this.hooks['boardPosition'](cloneDeep(this.queens))
   }
 
   /* The `removeQueen` method is responsible for removing a queen from the chessboard at the specified
@@ -45,6 +69,8 @@ export default class RecNQueensBoard {
     dbg(`Removing queen at ${x}, ${y}`);
     this.board[x][y] = 0;
     remove(this.queens, ([x2, y2]: number[]) => x == x2 && y == y2);
+    // @ts-ignore
+    this.hooks['boardPosition'](cloneDeep(this.queens))
   }
 
   /**
@@ -61,8 +87,7 @@ export default class RecNQueensBoard {
         let [x1, y1]: number[] = this.queens[i];
         const slope = (y2 - y1) / (x2 - x1);
         // horizontal, vertical, diagonal, same point
-        // @ts-ignore
-        if (slope == Infinity || slope == 0 || Math.abs(slope) == 1 || slope == NaN) {
+        if (slope == Infinity || slope == 0 || Math.abs(slope) == 1 || Number.isNaN(slope)) {
           dbg(`Queen cannot be placed at ${x2}, ${y2} X ${x1}, ${y1} because of slope ${slope}`);
           return false;
         }
@@ -71,6 +96,8 @@ export default class RecNQueensBoard {
     this.board[x2][y2] = 1;
     // @ts-ignore
     this.queens.push([x2, y2]);
+    // @ts-ignore
+    this.hooks['boardPosition'](cloneDeep(this.queens))
     return true;
   }
 
