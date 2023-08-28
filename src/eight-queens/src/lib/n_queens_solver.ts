@@ -1,36 +1,38 @@
-import { cloneDeep, times, remove, noop } from 'lodash';
+import {cloneDeep, times, remove, noop} from 'lodash';
 import Debug from 'debug';
 
 const dbg = Debug('RecNQueens');
 
-export interface HooksInterface {
-  removed?: Function,
-  solved?: Function,
-  placed?: Function,
-  boardPosition?: Function
+interface SolverStats {
+  steps: number,
+  removed: number,
+  placed: number,
+  solved: number
 }
+
+export type QueenCoordinates = [number, number];
+type BoardState = number[][]
+type MoveTypes = 'placed' | 'removed' | 'solved'
+type MoveSequence = MoveTypes[]
+
 
 export default class NQueensSolver {
   board: number[][];
-  hooks: HooksInterface | {} = {
-    removed: noop,
-    solved: noop,
-    placed: noop,
-    boardPosition: noop
-  };
-  
-  constructor(n: number) {
-    this.board = times(n, () => times(n, () => 0));
+  queens: QueenCoordinates[] = []; // [x, y] coordinates of queens
+
+  solutions: QueenCoordinates[][] = [];
+  moves: QueenCoordinates[][] = [];
+  moveSequence: MoveSequence = []
+
+  stats: SolverStats = {
+    steps: 0,
+    removed: 0,
+    placed: 0,
+    solved: 0
   }
 
-  queens: number[][] = []; // [x, y] coordinates of queens
-  solutionCount = 0;
-  solutions = [];
-  steps = 0;
-
-  initHooks(hooks: HooksInterface) {
-    this.hooks = hooks
-    return this
+  constructor(n: number) {
+    this.board = times(n, () => times(n, () => 0));
   }
 
   solve(row = 0): NQueensSolver {
@@ -57,8 +59,9 @@ export default class NQueensSolver {
   solutionFound(solution: number[][]) {
     const _solution = cloneDeep(solution)
     // @ts-ignore
-    this.solutions.push(_solution); 
-    // this.hooks['boardPosition'](cloneDeep(this.queens))
+    this.solutions.push(_solution);
+    this.stats.solved++
+    this.moveSequence.push('solved')
   }
 
   /* The `removeQueen` method is responsible for removing a queen from the chessboard at the specified
@@ -69,8 +72,9 @@ export default class NQueensSolver {
     dbg(`Removing queen at ${x}, ${y}`);
     this.board[x][y] = 0;
     remove(this.queens, ([x2, y2]: number[]) => x == x2 && y == y2);
-    // @ts-ignore
-    this.hooks['boardPosition'](cloneDeep(this.queens))
+    this.stats.removed++
+    this.moveSequence.push('removed')
+    this.moves.push(cloneDeep(this.queens));
   }
 
   /**
@@ -94,10 +98,10 @@ export default class NQueensSolver {
       }
     }
     this.board[x2][y2] = 1;
-    // @ts-ignore
     this.queens.push([x2, y2]);
-    // @ts-ignore
-    this.hooks['boardPosition'](cloneDeep(this.queens))
+    this.moves.push(cloneDeep(this.queens));
+    this.moveSequence.push('placed')
+    this.stats.placed++
     return true;
   }
 
@@ -108,7 +112,7 @@ export default class NQueensSolver {
       const solution = this.solutions[x];
       console.log(`Solution ${x}:`);
       console.log(solution);
-      const solutionBoard = this.buildSolutionBoard(solution); 
+      const solutionBoard = this.buildSolutionBoard(solution);
       console.log(this.printBoard(solutionBoard));
     }
   }
@@ -122,7 +126,7 @@ export default class NQueensSolver {
     solution.map(([x, y]) => {
       board[x][y] = 1;
     });
-    return board; 
+    return board;
   }
 }
 

@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import React from 'react'
+import Background from "@/components/arwes/Background";
 
 export default function Document() {
   return (

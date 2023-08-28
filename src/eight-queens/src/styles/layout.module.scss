@@ -1,0 +1,17 @@
+.header {
+  // Styles for the header
+}
+
+.content {
+  display: flex; // Use flexbox for layout
+
+  .board {
+    flex: 7; // Occupy 70% of the available space
+    // Styles for the board
+  }
+
+  .stats {
+    flex: 3; // Occupy 30% of the available space
+    // Styles for the stats
+  }
+}

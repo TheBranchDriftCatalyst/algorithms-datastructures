@@ -5,11 +5,7 @@ import { FrameSVGUnderline } from '@arwes/react-frames';
 
 const Header = (): ReactElement => {
   return (
-    <div style={{
-      position: 'relative',
-      width: 300,
-      height: 300
-    }}>
+    <div>
       <FrameSVGUnderline
         // @ts-ignore
         css={{
